@@ -1,0 +1,302 @@
+#free_space_area,
+#free_space_button,
+#files_area,
+#delete_area,
+#files_button,
+#delete_button,
+#ownlinks_download_button,
+#checkboxes_download_button,
+#dlresultbox,
+#downloads_result_text,
+#downloads_start_text,
+.models_porgress_loader {
+	display: none !important;
+}
+#models_search_input {
+	width: 500px !important;
+	float: none !important;
+	display: inline !important;
+	position: relative;
+	top: -25px;
+}
+#clear_search_models_results {
+	display: inline-block;
+	cursor: pointer !important;
+	--wh: 40px;
+	width: var(--wh);
+	height: var(--wh);
+	padding-top: 0px !important;
+	margin: 10px 0 0 10px!important;
+	position: relative;
+	top: -10px;
+	border-radius: 5px;
+	border: var(--button-border-width) solid var(--button-secondary-border-color);
+	text-align: center;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='m9.02,30.98L30.98,9.02m0,21.96L9.02,9.02' fill='none' opacity='.5' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.17'/%3E%3C/svg%3E");
+	background-color: var(--button-secondary-background-fill);
+}
+#finded_models {
+	position: absolute;
+	z-index: 2;
+	width: 500px;
+	top: 50px;
+	background: var(--input-background-fill);
+	color: var(--body-text-color);
+}
+#finded_models label {
+	background: none !important;
+	border: none;
+}
+#tab_models_list .tabs label {
+	background: none !important;
+	border: none;
+}
+#tab_models_list .tabs .tabitem div fieldset div {
+	display: grid;
+	grid-gap: 10px;
+}
+#tab_models_list div[data-testid='checkbox-group'] label span {
+	width: 275px;
+	font-size: 0.92em !important;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#tab_models_list div.tab-nav > button {
+	font-size: 1em !important;
+}
+#tab_models_list fieldset label:hover:not(.selected) {
+	color: var(--checkbox-background-color-selected)!important;
+}
+#tab_models_list fieldset .selected {
+	color: #60d43d !important;
+}
+#general_download_button {
+	border: var(--button-border-width) solid var(--button-primary-border-color);
+	background: var(--button-primary-background-fill);
+	color: var(--button-primary-text-color);
+	margin-top: 28px !important;
+}
+#tab_models_list button.secondary {
+	width: 70%;
+	margin: 0 auto;
+}
+#male_only {
+	color: #b8dabb !important;
+}
+.freespaceinfo {
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+#frespace_output {
+	width: fit-content;
+	height: 40px;
+	border: 1px solid var(--button-secondary-border-color);
+	margin: -30px 0px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 0px 15px;
+	font-size: 1.2em;
+}
+#freespace_get {
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--button-secondary-border-color);
+	margin: -30px 50px 0px 10px;
+	cursor: pointer;
+	background-image: url("data:image/svg+xml,%3Csvg id='refresh' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 36 36'%3E%3Cpath fill='%23fff' opacity='.5' d='m3.33,33v-2.81h6.09l-.7-.56c-2-1.59-3.45-3.33-4.36-5.2-.91-1.88-1.36-3.97-1.36-6.28,0-3.31.98-6.29,2.93-8.93,1.95-2.64,4.52-4.46,7.71-5.46v2.91c-2.34.91-4.23,2.41-5.67,4.52-1.44,2.11-2.16,4.43-2.16,6.96,0,1.97.37,3.68,1.1,5.13.73,1.45,1.73,2.71,2.98,3.77l1.41.98v-5.81h2.81v10.78H3.33Zm19.08-.7v-2.95c2.37-.91,4.27-2.41,5.67-4.52,1.41-2.11,2.11-4.43,2.11-6.96,0-1.5-.37-3.02-1.1-4.57-.73-1.55-1.7-2.91-2.88-4.1l-1.36-1.22v5.81h-2.81V3h10.78v2.81h-6.14l.7.66c1.88,1.75,3.28,3.63,4.22,5.63.94,2,1.41,3.92,1.41,5.77,0,3.31-.97,6.3-2.91,8.95-1.94,2.66-4.5,4.48-7.69,5.48Z'%3E%3C/path%3E%3C/svg%3E");
+	background-position: 50%;
+	background-repeat: no-repeat
+}
+#freespace_get:hover {
+	background-color: #00000078;
+	background-image: url("data:image/svg+xml,%3Csvg id='refresh' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 36 36'%3E%3Cpath fill='%23fff' opacity='.7' d='m3.33,33v-2.81h6.09l-.7-.56c-2-1.59-3.45-3.33-4.36-5.2-.91-1.88-1.36-3.97-1.36-6.28,0-3.31.98-6.29,2.93-8.93,1.95-2.64,4.52-4.46,7.71-5.46v2.91c-2.34.91-4.23,2.41-5.67,4.52-1.44,2.11-2.16,4.43-2.16,6.96,0,1.97.37,3.68,1.1,5.13.73,1.45,1.73,2.71,2.98,3.77l1.41.98v-5.81h2.81v10.78H3.33Zm19.08-.7v-2.95c2.37-.91,4.27-2.41,5.67-4.52,1.41-2.11,2.11-4.43,2.11-6.96,0-1.5-.37-3.02-1.1-4.57-.73-1.55-1.7-2.91-2.88-4.1l-1.36-1.22v5.81h-2.81V3h10.78v2.81h-6.14l.7.66c1.88,1.75,3.28,3.63,4.22,5.63.94,2,1.41,3.92,1.41,5.77,0,3.31-.97,6.3-2.91,8.95-1.94,2.66-4.5,4.48-7.69,5.48Z'%3E%3C/path%3E%3C/svg%3E");
+}
+#freespace_get:active {
+	background-color: #00000078;
+	background-image: url("data:image/svg+xml,%3Csvg id='refresh' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 36 36'%3E%3Cpath fill='%23fff' opacity='.85' d='m3.33,33v-2.81h6.09l-.7-.56c-2-1.59-3.45-3.33-4.36-5.2-.91-1.88-1.36-3.97-1.36-6.28,0-3.31.98-6.29,2.93-8.93,1.95-2.64,4.52-4.46,7.71-5.46v2.91c-2.34.91-4.23,2.41-5.67,4.52-1.44,2.11-2.16,4.43-2.16,6.96,0,1.97.37,3.68,1.1,5.13.73,1.45,1.73,2.71,2.98,3.77l1.41.98v-5.81h2.81v10.78H3.33Zm19.08-.7v-2.95c2.37-.91,4.27-2.41,5.67-4.52,1.41-2.11,2.11-4.43,2.11-6.96,0-1.5-.37-3.02-1.1-4.57-.73-1.55-1.7-2.91-2.88-4.1l-1.36-1.22v5.81h-2.81V3h10.78v2.81h-6.14l.7.66c1.88,1.75,3.28,3.63,4.22,5.63.94,2,1.41,3.92,1.41,5.77,0,3.31-.97,6.3-2.91,8.95-1.94,2.66-4.5,4.48-7.69,5.48Z'%3E%3C/path%3E%3C/svg%3E");
+	transform: rotate(90deg)
+}
+span#frespace_out {
+	color: #7ced7c
+}
+.ownfiles_header {
+	display: flex;
+}
+.ownfiles_header > span {
+	margin-right: 50px;
+}
+.ownfiles_header h2 {
+	font-size: 1.2em !important;
+	color: #deeedb !important;
+	font-weight: normal !important
+}
+#ownmodels > label > span {
+	color: #37e46f;
+}
+#ownloras > label > span {
+	color: #45b9ec;
+}
+#ownembeddings > label > span {
+	color: #f46ea2;
+}
+#ownmodels > label > textarea,
+#ownloras > label > textarea,
+#ownembeddings > label > textarea {
+	font-family: monospace;
+	font-size: 0.95em
+}
+#ownmodels > label > textarea {
+	color: #a7d0b4;
+}
+#ownloras > label > textarea {
+	color: #9bc5d9;
+}
+#ownembeddings > label > textarea {
+	color: #dcbfcb;
+}
+#filemanager {
+	height: max-content;
+}
+.current_models_files {
+	margin-bottom: 30px!important;
+	color: #eedbdb !important;
+}
+#files_checkbox {
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 35px;
+	grid-row-gap: 18px;
+}
+.filecheckbox input {
+	margin-right: 6px;
+	border: var(--checkbox-border-width) solid var(--checkbox-border-color) !important;
+	background-color: var(--checkbox-background-color) !important;
+	line-height: var(--line-sm) !important;
+}
+.filecheckbox input:checked {
+	border-color: #f47373 !important;
+	background-image: #de2f2f !important;
+	background-color: #de2f2f !important;
+}
+.filecheckbox span:hover {
+	color: #ff9494
+}
+.filebuttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 2px solid #afafaf17;
+}
+#delete_files_button,
+#refresh_files_button {
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--button-secondary-border-color);
+	margin: 0 50px;
+	cursor: pointer;
+	background-color: transparent;
+	background-position: 50%;
+	background-repeat: no-repeat
+}
+#refresh_files_button {
+	background-image: url("data:image/svg+xml,%3Csvg id='refresh' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 36 36'%3E%3Cpath fill='%23fff' opacity='.5' d='m3.33,33v-2.81h6.09l-.7-.56c-2-1.59-3.45-3.33-4.36-5.2-.91-1.88-1.36-3.97-1.36-6.28,0-3.31.98-6.29,2.93-8.93,1.95-2.64,4.52-4.46,7.71-5.46v2.91c-2.34.91-4.23,2.41-5.67,4.52-1.44,2.11-2.16,4.43-2.16,6.96,0,1.97.37,3.68,1.1,5.13.73,1.45,1.73,2.71,2.98,3.77l1.41.98v-5.81h2.81v10.78H3.33Zm19.08-.7v-2.95c2.37-.91,4.27-2.41,5.67-4.52,1.41-2.11,2.11-4.43,2.11-6.96,0-1.5-.37-3.02-1.1-4.57-.73-1.55-1.7-2.91-2.88-4.1l-1.36-1.22v5.81h-2.81V3h10.78v2.81h-6.14l.7.66c1.88,1.75,3.28,3.63,4.22,5.63.94,2,1.41,3.92,1.41,5.77,0,3.31-.97,6.3-2.91,8.95-1.94,2.66-4.5,4.48-7.69,5.48Z'%3E%3C/path%3E%3C/svg%3E");
+}
+#refresh_files_button:hover {
+	background-color: #00000078;
+	background-image: url("data:image/svg+xml,%3Csvg id='refresh' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 36 36'%3E%3Cpath fill='%23fff' opacity='.7' d='m3.33,33v-2.81h6.09l-.7-.56c-2-1.59-3.45-3.33-4.36-5.2-.91-1.88-1.36-3.97-1.36-6.28,0-3.31.98-6.29,2.93-8.93,1.95-2.64,4.52-4.46,7.71-5.46v2.91c-2.34.91-4.23,2.41-5.67,4.52-1.44,2.11-2.16,4.43-2.16,6.96,0,1.97.37,3.68,1.1,5.13.73,1.45,1.73,2.71,2.98,3.77l1.41.98v-5.81h2.81v10.78H3.33Zm19.08-.7v-2.95c2.37-.91,4.27-2.41,5.67-4.52,1.41-2.11,2.11-4.43,2.11-6.96,0-1.5-.37-3.02-1.1-4.57-.73-1.55-1.7-2.91-2.88-4.1l-1.36-1.22v5.81h-2.81V3h10.78v2.81h-6.14l.7.66c1.88,1.75,3.28,3.63,4.22,5.63.94,2,1.41,3.92,1.41,5.77,0,3.31-.97,6.3-2.91,8.95-1.94,2.66-4.5,4.48-7.69,5.48Z'%3E%3C/path%3E%3C/svg%3E");
+}
+#refresh_files_button:active {
+	background-color: #00000078;
+	background-image: url("data:image/svg+xml,%3Csvg id='refresh' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 36 36'%3E%3Cpath fill='%23fff' opacity='.85' d='m3.33,33v-2.81h6.09l-.7-.56c-2-1.59-3.45-3.33-4.36-5.2-.91-1.88-1.36-3.97-1.36-6.28,0-3.31.98-6.29,2.93-8.93,1.95-2.64,4.52-4.46,7.71-5.46v2.91c-2.34.91-4.23,2.41-5.67,4.52-1.44,2.11-2.16,4.43-2.16,6.96,0,1.97.37,3.68,1.1,5.13.73,1.45,1.73,2.71,2.98,3.77l1.41.98v-5.81h2.81v10.78H3.33Zm19.08-.7v-2.95c2.37-.91,4.27-2.41,5.67-4.52,1.41-2.11,2.11-4.43,2.11-6.96,0-1.5-.37-3.02-1.1-4.57-.73-1.55-1.7-2.91-2.88-4.1l-1.36-1.22v5.81h-2.81V3h10.78v2.81h-6.14l.7.66c1.88,1.75,3.28,3.63,4.22,5.63.94,2,1.41,3.92,1.41,5.77,0,3.31-.97,6.3-2.91,8.95-1.94,2.66-4.5,4.48-7.69,5.48Z'%3E%3C/path%3E%3C/svg%3E");
+	transform: rotate(90deg)
+}
+#delete_files_button {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='36' viewBox='0 0 32 36'%3E%3Cpath d='m10.05,27.05l5.95-6.05,6,6.05,2.35-2.4-5.95-6.05,5.95-6.05-2.35-2.4-6,6.05-5.95-6.05-2.4,2.4,6,6.05-6,6.05,2.4,2.4Zm-5,8.95c-.8,0-1.5-.3-2.1-.9s-.9-1.3-.9-2.1V4.5H0V1.5h9.4V0h13.2v1.5h9.4v3h-2.05v28.5c0,.8-.3,1.5-.9,2.1s-1.3.9-2.1.9H5.05ZM26.95,4.5H5.05v28.5h21.9V4.5Zm-21.9,0v28.5V4.5Z' opacity='.5' fill='%23fff'/%3E%3C/svg%3E");
+	background-size: 62%;
+}
+#delete_files_button:hover {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='36' viewBox='0 0 32 36'%3E%3Cpath d='m10.05,27.05l5.95-6.05,6,6.05,2.35-2.4-5.95-6.05,5.95-6.05-2.35-2.4-6,6.05-5.95-6.05-2.4,2.4,6,6.05-6,6.05,2.4,2.4Zm-5,8.95c-.8,0-1.5-.3-2.1-.9s-.9-1.3-.9-2.1V4.5H0V1.5h9.4V0h13.2v1.5h9.4v3h-2.05v28.5c0,.8-.3,1.5-.9,2.1s-1.3.9-2.1.9H5.05ZM26.95,4.5H5.05v28.5h21.9V4.5Zm-21.9,0v28.5V4.5Z' opacity='.7' fill='%23ff2727'/%3E%3C/svg%3E");
+	background-size: 62%;
+}
+#delete_files_button:active {
+	background-color: #00000078;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='36' viewBox='0 0 32 36'%3E%3Cpath d='m10.05,27.05l5.95-6.05,6,6.05,2.35-2.4-5.95-6.05,5.95-6.05-2.35-2.4-6,6.05-5.95-6.05-2.4,2.4,6,6.05-6,6.05,2.4,2.4Zm-5,8.95c-.8,0-1.5-.3-2.1-.9s-.9-1.3-.9-2.1V4.5H0V1.5h9.4V0h13.2v1.5h9.4v3h-2.05v28.5c0,.8-.3,1.5-.9,2.1s-1.3.9-2.1.9H5.05ZM26.95,4.5H5.05v28.5h21.9V4.5Zm-21.9,0v28.5V4.5Z' opacity='1' fill='%23ff2727'/%3E%3C/svg%3E");
+	background-size: 62%;
+}
+.models_porgress_loader {
+	width: 70%;
+	height: 8px;
+	display: block;
+	background: var(--block-label-border-color);
+	position: relative;
+	top: 0px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.models_porgress_loader::after {
+	content: '';
+	width: 0%;
+	height: 8px;
+	background-color: #ffffff2e;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, .25) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.25) 75%, transparent 75%, transparent);
+	background-size: 15px 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	animation: models_progress_bar_anim 10s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+@keyframes models_progress_bar_anim {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+#downloads_result_text,
+#downloads_start_text {
+	margin: 32px auto;
+	width: fit-content;
+	top: 100px;
+	font-size: 1.4em;
+}
+#downloads_start_text {
+	color: #81d0fb !important
+}
+#downloads_result_text > span {
+	display: block;
+	text-align: center;
+}
+#downloads_result_text > span.finish_dl_func {
+	color: #99fb99 !important
+}
+#downloads_result_text > span.dl_progress_info {
+	font-size: 0.7em!important;
+	margin-top: 10px;
+}
+#tab_models_list #colab_model_list.colab_model_list {
+	background: transparent !important;
+	background-image: none !important;
+}
+.request_new_models a {
+	color: var(--link-text-color) !important;
+	text-decoration: underline dashed !important
+}
+.request_new_models a:hover {
+	color: var(--link-text-color-hover) !important;
+	text-decoration: underline solid !important
+}
